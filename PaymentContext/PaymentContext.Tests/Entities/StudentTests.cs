@@ -9,6 +9,8 @@ public class StudentTests
     [TestMethod]
     public void TestMethod1()
     {
+        var subscription = new Subscription(null);
         var student = new Student(" ", " ", " ", " ", " ");
+
     }
 }

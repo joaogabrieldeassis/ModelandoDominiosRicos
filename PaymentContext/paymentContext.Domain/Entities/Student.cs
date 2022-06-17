@@ -23,7 +23,10 @@ namespace PaymentContext.Domain.Entities
 
         public void AddSubscriptions(Subscription subscription)
         {
+            foreach (var item in Subscriptions)
+                item.Inactivate();
 
+            _subscription.Add(subscription);
         }
     }
 }
