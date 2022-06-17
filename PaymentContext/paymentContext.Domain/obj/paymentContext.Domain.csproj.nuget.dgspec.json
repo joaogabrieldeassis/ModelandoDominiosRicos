@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\paymentContext.Domain.csproj": {}
+    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj": {}
   },
   "projects": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\paymentContext.Domain.csproj": {
+    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\paymentContext.Domain.csproj",
-        "projectName": "paymentContext.Domain",
-        "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\paymentContext.Domain.csproj",
+        "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj",
+        "projectName": "paymentcontext.domain",
+        "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\obj\\",
+        "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj": {}
+    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.tests\\paymentcontext.tests.csproj": {}
   },
   "projects": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj": {
+    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.tests\\paymentcontext.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
-        "projectName": "PaymentContext.Tests",
-        "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
+        "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.tests\\paymentcontext.tests.csproj",
+        "projectName": "paymentcontext.tests",
+        "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.tests\\paymentcontext.tests.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\obj\\",
+        "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",

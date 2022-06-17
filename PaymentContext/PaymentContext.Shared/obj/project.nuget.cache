@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d+V+GAaKXGcdPZlEjMBHn9lt7J/c/cc+T38VvNihwoIHjGAsBXr5doPBX8cx3htYoGk6HdkxvlX5sFIUS0lnqw==",
+  "dgSpecHash": "1uySJxD1XBfkIvOMTAiKDdrepxGpwrN2OYxG4tqpjOtW6G0X0ggBPJ4WLU6mMMgWg1q35kjxJw43EhC9gUhpqA==",
   "success": true,
-  "projectFilePath": "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
+  "projectFilePath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.shared\\paymentcontext.shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
