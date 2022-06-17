@@ -1,17 +1,75 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj": {}
+    "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj": {}
   },
   "projects": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj": {
+    "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj",
+        "projectUniqueName": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj",
         "projectName": "paymentcontext.domain",
-        "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\paymentcontext.domain.csproj",
+        "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.domain\\obj\\",
+        "outputPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj": {
+                "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj",
+        "projectName": "paymentcontext.shared",
+        "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj",
+        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+        "outputPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",

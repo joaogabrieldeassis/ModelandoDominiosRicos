@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "paymentcontext.domain/1.0.0": {
+        "dependencies": {
+          "paymentcontext.shared": "1.0.0"
+        },
         "runtime": {
           "paymentcontext.domain.dll": {}
+        }
+      },
+      "paymentcontext.shared/1.0.0": {
+        "runtime": {
+          "paymentcontext.shared.dll": {}
         }
       }
     }
   },
   "libraries": {
     "paymentcontext.domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "paymentcontext.shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

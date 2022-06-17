@@ -1660,6 +1660,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "paymentcontext.domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "paymentcontext.shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/paymentcontext.domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/paymentcontext.domain.dll": {}
+        }
+      },
+      "paymentcontext.shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/paymentcontext.shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/paymentcontext.shared.dll": {}
+        }
       }
     }
   },
@@ -6193,6 +6216,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "paymentcontext.domain/1.0.0": {
+      "type": "project",
+      "path": "../paymentcontext.domain/paymentcontext.domain.csproj",
+      "msbuildProject": "../paymentcontext.domain/paymentcontext.domain.csproj"
+    },
+    "paymentcontext.shared/1.0.0": {
+      "type": "project",
+      "path": "../paymentcontext.shared/paymentcontext.shared.csproj",
+      "msbuildProject": "../paymentcontext.shared/paymentcontext.shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6200,7 +6233,9 @@
       "MSTest.TestAdapter >= 2.2.7",
       "MSTest.TestFramework >= 2.2.7",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
-      "coverlet.collector >= 3.1.0"
+      "coverlet.collector >= 3.1.0",
+      "paymentcontext.domain >= 1.0.0",
+      "paymentcontext.shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6209,11 +6244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
-      "projectName": "PaymentContext.Tests",
-      "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
+      "projectUniqueName": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.tests\\paymentcontext.tests.csproj",
+      "projectName": "paymentcontext.tests",
+      "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.tests\\paymentcontext.tests.csproj",
       "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\PaymentContext.Tests\\obj\\",
+      "outputPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6229,7 +6264,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj": {
+              "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj"
+            },
+            "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj": {
+              "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

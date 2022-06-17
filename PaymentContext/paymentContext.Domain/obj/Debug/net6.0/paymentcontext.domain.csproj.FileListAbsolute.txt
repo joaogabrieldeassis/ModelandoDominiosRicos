@@ -10,3 +10,6 @@ C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.domain\obj\Debug\net6.0\
 C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.domain\obj\Debug\net6.0\refint\paymentcontext.domain.dll
 C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.domain\obj\Debug\net6.0\paymentcontext.domain.pdb
 C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.domain\obj\Debug\net6.0\ref\paymentcontext.domain.dll
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.domain\bin\Debug\net6.0\paymentcontext.shared.dll
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.domain\bin\Debug\net6.0\paymentcontext.shared.pdb
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.domain\obj\Debug\net6.0\paymentcontext.domain.csproj.CopyComplete

@@ -1,6 +1,6 @@
 namespace PaymentContext.Domain.Entities
 {
-    public class Payment
+    public abstract class Payment
     {
         public Payment(DateTime paidDate, DateTime expireDate, decimal total, decimal totalPaid, string payer, string document, string address, string email)
         {

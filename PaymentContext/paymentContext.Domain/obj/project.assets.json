@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "paymentcontext.shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/paymentcontext.shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/paymentcontext.shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "paymentcontext.shared/1.0.0": {
+      "type": "project",
+      "path": "../paymentcontext.shared/paymentcontext.shared.csproj",
+      "msbuildProject": "../paymentcontext.shared/paymentcontext.shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "paymentcontext.shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Windows\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\paymentContext.Domain.csproj",
-      "projectName": "paymentContext.Domain",
-      "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\paymentContext.Domain.csproj",
+      "projectUniqueName": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj",
+      "projectName": "paymentcontext.domain",
+      "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj",
       "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentContext.Domain\\obj\\",
+      "outputPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj": {
+              "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.shared\\paymentcontext.shared.csproj": {}
+    "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj": {}
   },
   "projects": {
-    "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.shared\\paymentcontext.shared.csproj": {
+    "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.shared\\paymentcontext.shared.csproj",
+        "projectUniqueName": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj",
         "projectName": "paymentcontext.shared",
-        "projectPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.shared\\paymentcontext.shared.csproj",
+        "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\ModelandoDominiosRicos\\PaymentContext\\paymentcontext.shared\\obj\\",
+        "outputPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",

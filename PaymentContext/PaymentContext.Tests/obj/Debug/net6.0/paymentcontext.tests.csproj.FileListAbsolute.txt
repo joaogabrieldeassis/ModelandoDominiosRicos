@@ -96,3 +96,8 @@ C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.tests\obj\Debug\net6.0\r
 C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.tests\obj\Debug\net6.0\paymentcontext.tests.pdb
 C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.tests\obj\Debug\net6.0\paymentcontext.tests.genruntimeconfig.cache
 C:\ModelandoDominiosRicos\PaymentContext\paymentcontext.tests\obj\Debug\net6.0\ref\paymentcontext.tests.dll
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.tests\bin\Debug\net6.0\paymentcontext.domain.dll
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.tests\bin\Debug\net6.0\paymentcontext.shared.dll
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.tests\bin\Debug\net6.0\paymentcontext.shared.pdb
+C:\ModelandoDominiosRicos\paymentcontext\paymentcontext.tests\bin\Debug\net6.0\paymentcontext.domain.pdb
