@@ -10,7 +10,7 @@ namespace PaymentContext.Domain.ValueObjects
             Number = number;
         }
 
-        public string Number { get; set; }
+        public string Number { get; private set; }
         public EDocumentType EDocumentType { get; private set; }
     }
 }
