@@ -1,8 +1,9 @@
 using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Entities;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Student
+    public class Student : Entity
     {
         private List<Subscription> _subscription;
         public Student(Name name, Document document, Email email, string address)
