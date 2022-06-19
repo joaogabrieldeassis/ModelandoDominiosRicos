@@ -2,28 +2,54 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "paymentcontext.shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+      "Flunt/2.0.5": {
+        "type": "package",
         "compile": {
-          "bin/placeholder/paymentcontext.shared.dll": {}
+          "lib/netstandard2.0/Flunt.dll": {}
         },
         "runtime": {
-          "bin/placeholder/paymentcontext.shared.dll": {}
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
+      "PaymentContext.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/PaymentContext.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PaymentContext.Shared.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "paymentcontext.shared/1.0.0": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
+    "PaymentContext.Shared/1.0.0": {
       "type": "project",
-      "path": "../paymentcontext.shared/paymentcontext.shared.csproj",
-      "msbuildProject": "../paymentcontext.shared/paymentcontext.shared.csproj"
+      "path": "../PaymentContext.Shared/PaymentContext.Shared.csproj",
+      "msbuildProject": "../PaymentContext.Shared/PaymentContext.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "paymentcontext.shared >= 1.0.0"
+      "PaymentContext.Shared >= 1.0.0",
+      "flunt >= 2.0.5"
     ]
   },
   "packageFolders": {
@@ -32,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj",
-      "projectName": "paymentcontext.domain",
-      "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\paymentcontext.domain.csproj",
+      "projectUniqueName": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentContext.Domain\\paymentContext.Domain.csproj",
+      "projectName": "paymentContext.Domain",
+      "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentContext.Domain\\paymentContext.Domain.csproj",
       "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-      "outputPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.domain\\obj\\",
+      "outputPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentContext.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +79,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj": {
-              "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\paymentcontext.shared\\paymentcontext.shared.csproj"
+            "C:\\ModelandoDominiosRicos\\paymentcontext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
+              "projectPath": "C:\\ModelandoDominiosRicos\\paymentcontext\\PaymentContext.Shared\\PaymentContext.Shared.csproj"
             }
           }
         }
@@ -68,6 +94,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "flunt": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

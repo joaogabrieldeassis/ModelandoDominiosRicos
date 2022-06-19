@@ -16,7 +16,6 @@ namespace PaymentContext.Domain.Entities
             Address = address;
             Email = email;
         }
-
         public string Number { get; private set; }
         public DateTime PaidDate { get; private set; }
         public DateTime ExpireDate { get; private set; }
