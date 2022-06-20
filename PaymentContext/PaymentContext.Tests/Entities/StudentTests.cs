@@ -11,7 +11,6 @@ public class StudentTests
     public void TestMethod1()
     {
 
-        var name = new Name("Teste", "Joao");
-        name.Notifications
+
     }
 }
