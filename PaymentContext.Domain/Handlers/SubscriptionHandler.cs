@@ -12,11 +12,13 @@ using PaymentContext.Shared.Handlers;
 
 namespace PaymentContext.Domain.Handlers
 {
-    public class SubscriptionHandler : Notifiable, IHandler<CreateBoletoSubscriptionCommand>
+    public class SubscriptionHandler : Notifiable, IHandler<CreateBoletoSubscriptionCommand>, IHandler<CreatePayPalSubscriptionCommand>
     {
         private readonly IStudentRepository _repository;
-        public SubscriptionHandler(IStudentRepository repository)
+        private readonly IEmailService _emailService;
+        public SubscriptionHandler(IStudentRepository repository, IEmailService emailService)
         {
+            _emailService = emailService;
             _repository = repository;
         }
         public ICommandResult Handle(CreateBoletoSubscriptionCommand command)
@@ -56,7 +58,43 @@ namespace PaymentContext.Domain.Handlers
             //Salvar as informações
             _repository.CreateSubscription(student);
             //Enviar email de boas vindas 
+            _emailService.Send(student.Name.ToString(), student.Email.Address, "Bem vindo ao Balta", "Sua assinatura foi criada");
+            //Retornar informações 
+            return new CommandResult(true, "Assinaura realizada com sucesso");
+        }
 
+        public ICommandResult Handle(CreatePayPalSubscriptionCommand command)
+        {
+
+            //Verificar se docomumento e email já está cadastrado
+            if (_repository.DocumentExists(command.Document))
+                AddNotification("Document", "Este documento já existe");
+
+            if (_repository.EmailExists(command.Email))
+                AddNotification("Email", "Este email já existe");
+
+            //Gerar as VOs
+            var name = new Name(command.FirstName, command.LastName);
+            var document = new Document(command.Document, EDocumentType.CPF);
+            var email = new Email(command.Email);
+            var adrress = new Address(command.Street, command.Number, command.Neighborhood, command.City, command.State, command.Country, command.ZipCode);
+
+            //Gerar as entidades 
+            var student = new Student(name, document, email);
+            var subscription = new Subscription(DateTime.Now.AddDays(30));
+            var payment = new PayPalPayment(command.TransactionCode, command.PaidDate, command.ExpireDate, command.Total, command.TotalPaid, command.Payer, new Document(command.PayerDocument, command.PayerDocumentType), adrress, email);
+
+            //Relacionamentos
+            subscription.AddPayment(payment);
+            student.AddSubscription(subscription);
+
+            //Agrupar as validações
+            AddNotifications(name, document, email, adrress, student, subscription, payment);
+
+            //Salvar as informações
+            _repository.CreateSubscription(student);
+            //Enviar email de boas vindas 
+            _emailService.Send(student.Name.ToString(), student.Email.Address, "Bem vindo ao Balta", "Sua assinatura foi criada");
             //Retornar informações 
             return new CommandResult(true, "Assinaura realizada com sucesso");
         }
