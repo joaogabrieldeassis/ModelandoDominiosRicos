@@ -40,10 +40,23 @@ namespace PaymentContext.Domain.Handlers
             var document = new Document(command.Document, EDocumentType.CPF);
             var email = new Email(command.Email);
             var adrress = new Address(command.Street, command.Number, command.Neighborhood, command.City, command.State, command.Country, command.ZipCode);
+
             //Gerar as entidades 
-            //Aplicar as validações
+            var student = new Student(name, document, email);
+            var subscription = new Subscription(DateTime.Now.AddDays(30));
+            var payment = new BoletoPayment(command.BarCode, command.BoletoNumber, command.PaidDate, command.ExpireDate, command.Total, command.TotalPaid, command.Payer, new Document(command.PayerDocument, command.PayerDocumentType), adrress, email);
+
+            //Relacionamentos
+            subscription.AddPayment(payment);
+            student.AddSubscription(subscription);
+
+            //Agrupar as validações
+            AddNotifications(name, document, email, adrress, student, subscription, payment);
+
             //Salvar as informações
+            _repository.CreateSubscription(student);
             //Enviar email de boas vindas 
+
             //Retornar informações 
             return new CommandResult(true, "Assinaura realizada com sucesso");
         }
